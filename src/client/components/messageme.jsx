@@ -29,7 +29,7 @@ class MessageMeComponent extends Component{
                 <div className="animated bounceInUp" className="leftSquare">
                     <div className="row">
                         <div className="col-lg-8">
-                        <h1 className="title">Codepen</h1>
+                        <h1 className="title">MessageMe</h1>
                         </div>
                         <i className="down fa fa-chevron-down" aria-hidden="true"></i>
             
@@ -46,17 +46,10 @@ class MessageMeComponent extends Component{
                     </div>
                     <div className="highlight-channel"></div>
                     <div className="row">
-                        <h2 className="channel"># pens</h2>
+                        <h2 className="channel"># birthday</h2>
                     </div>
                     <div className="row">
-                        <h2 className="channel2"><span className="opacity"># </span> <span className="bold">posts</span></h2>
-                    </div>
-                    <div className="row">
-                        <h2 className="channel3"># shop</h2>
-                    </div>
-                    <div className="row">
-                        <span className="highlight">
-                            <h2 className="channel4"># codevember</h2></span>
+                        <h2 className="channel3"># introductions</h2>
                     </div>
                     <div className="row">
                         <h2 className="messages">DIRECT MESSAGES<span className="light">(12)</span> <i className="add-two fa fa-plus-circle fa-inverse"></i> </h2>
