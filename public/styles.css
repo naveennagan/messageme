@@ -12,7 +12,7 @@ body{
     
   }
   
-  #square {
+  .square {
     position: relative;
       width: 800px;
       height: 450px;
@@ -22,7 +22,7 @@ body{
     z-index: 1;
   }
       
-  #leftSquare {
+  .leftSquare {
       width: 26%;
       height: 100%;
     position: relative;
@@ -34,7 +34,7 @@ body{
     z-index: 1;
   }
   
-  #highlight-channel{
+  .highlight-channel{
     position: absolute;
     top: 24%;
     width: 90%;
@@ -43,7 +43,7 @@ body{
     border: 10px solid #4C9689;
   }
   
-  #header {
+  .header {
       width: 75%;
     display: block;
     margin:  auto;
@@ -57,7 +57,7 @@ body{
     z-index: 1;
   }
   
-  #circle{
+  .circle{
       position: absolute;
       border-radius: 50%;
       left: 13%;
@@ -70,7 +70,7 @@ body{
       z-index: 3;
     }
   
-  #circle2{
+  .circle2{
       position: absolute;
       border-radius: 50%;
       left: 16%;
@@ -82,7 +82,7 @@ body{
       margin: auto;
       z-index: 3;
     }
-  #circle3{
+  .circle3{
       position: absolute;
       border-radius: 50%;
       left: 16%;
@@ -107,7 +107,7 @@ body{
     
   }
   
-  #icons{
+  .icons{
     
     padding-bottom: 5px;
     
@@ -124,7 +124,7 @@ body{
     text-align: left;
     z-index: 3;
   }
-  #subtitle{
+  .subtitle{
     position: absolute;
     left: 19%;
     top: 6%;
@@ -136,7 +136,7 @@ body{
     text-align: center;
     z-index: 3;
   }
-  #subtitle2{
+  .subtitle2{
     position: absolute;
     left: 22%;
     top: 54.7%;
@@ -148,7 +148,7 @@ body{
     text-align: center;
     z-index: 3;
   }
-  #subtitle3{
+  .subtitle3{
     position: absolute;
     left: 22%;
     top: 59.7%;
@@ -161,7 +161,7 @@ body{
     z-index: 3;
   }
   
-  #channel-title{
+  .channel-title{
     color: #2C2D30;
     font-family:"lato";
     font-size: 18px;
@@ -170,7 +170,7 @@ body{
     text-align: left;
     z-index: 3;
   }
-  #channels{
+  .channels{
     position: absolute;
     left: 13%;
     top: 14%;
@@ -243,7 +243,7 @@ body{
     z-index: 3;
     
   }
-  #line3{
+  .line3{
     
     position: absolute;
     right: 33%;
@@ -307,7 +307,7 @@ body{
     color: #2C2D30;
   }
   
-  #line{
+  .line{
     
     position: absolute;
     left: 7%;
@@ -319,7 +319,7 @@ body{
     color: #2C2D30;
     
   }
-  #line2{
+  .line2{
     
     position: absolute;
     left: 14%;
@@ -340,7 +340,7 @@ body{
   }
   
   
-  #channel{
+  .channel{
     position: absolute;
     left: 16%;
     top: 20%;
@@ -352,7 +352,10 @@ body{
     text-align: center;
     z-index: 3;
   }
-  #messages{
+  .message{
+      position: relative;
+  }
+  .messages{
     position: absolute;
     left: 13%;
     top: 50%;
@@ -364,7 +367,7 @@ body{
     text-align: center;
     z-index: 3;
   }
-  #channel2{
+  .channel2{
     position: absolute;
     left: 16%;
     top: 26%;
@@ -375,7 +378,7 @@ body{
     text-align: center;
     z-index: 3;
   }
-  #channel3{
+  .channel3{
     position: absolute;
     left: 16%;
     top: 32%;
@@ -387,7 +390,7 @@ body{
     text-align: center;
     z-index: 3;
   }
-  #channel4{
+  .channel4{
     position: absolute;
     left: 16%;
     top: 38%;
@@ -400,23 +403,23 @@ body{
     z-index: 3;
   }
   
-  #highlight{
+  .highlight{
     
     background: #4C9689;
     
   }
-  #light{
+  .light{
     margin-left: 5px;
     opacity: 0.5;
   }
   
-  #opacity{
+  .opacity{
     color: white;
     font-weight: 800;
     opacity: 0.6;
   }
   
-  #bold{
+  .bold{
     color: white;
     font-weight: 800;
     opacity: 1.0;
@@ -441,7 +444,7 @@ body{
     
   }
   
-  #message-area{
+  .message-area{
     
     position: absolute;
     background: none;
@@ -453,7 +456,7 @@ body{
     
   }
   
-  #message-area-two{
+  .message-area-two{
     
     position: absolute;
     background: none;
@@ -464,7 +467,7 @@ body{
     margin:  auto;
     
   }
-  #message-area-three{
+  .message-area-three{
     
     position: absolute;
     background: none;
@@ -475,7 +478,7 @@ body{
     margin:  auto;
     
   }
-  #message-area-four{
+  .message-area-four{
     
     position: absolute;
     background: none;
@@ -486,7 +489,7 @@ body{
     margin:  auto;
     
   }
-  #message-area-five{
+  .message-area-five{
     
     position: absolute;
     background: none;
@@ -497,7 +500,7 @@ body{
     margin:  auto;
     
   }
-  #message-area-six{
+  .message-area-six{
     
     position: absolute;
     background: none;
@@ -518,7 +521,7 @@ body{
       border-radius: 10%;
   }
   
-  #person-name{ 
+  .person-name{ 
     position: absolute;
     color: #2C2D30;
     font-family:"lato";
@@ -530,7 +533,7 @@ body{
     z-index: 3;
   }
   
-  #time{
+  .time{
     color: #2C2D30;
     padding-left: 5px;
     font-family:"lato";
@@ -539,7 +542,7 @@ body{
     font-weight: 400;
   }
   
-  #person-text{ 
+  .person-text{ 
     position: absolute;
     color: #2C2D30;
     font-family:"lato";
@@ -563,7 +566,7 @@ body{
       border-radius: 10%;
   }
   
-  #person-name-two{ 
+  .person-name-two{ 
     position: absolute;
     color: #2C2D30;
     font-family:"lato";
@@ -575,7 +578,7 @@ body{
     z-index: 3;
   }
   
-  #person-text-two{ 
+  .person-text-two{ 
     position: absolute;
     color: #2C2D30;
     font-family:"lato";
@@ -599,7 +602,7 @@ body{
       border-radius: 10%;
   }
   
-  #person-name-three{ 
+  .person-name-three{ 
     position: absolute;
     color: #2C2D30;
     font-family:"lato";
@@ -610,7 +613,7 @@ body{
     text-align: left;
     z-index: 3;
   }
-  #person-text-three{ 
+  .person-text-three{ 
     position: absolute;
     color: #2C2D30;
     font-family:"lato";
@@ -634,7 +637,7 @@ body{
       border-radius: 10%;
   }
   
-  #person-name-four{ 
+  .person-name-four{ 
     position: absolute;
     color: #2C2D30;
     font-family:"lato";
@@ -645,7 +648,7 @@ body{
     text-align: left;
     z-index: 3;
   }
-  #person-text-four{ 
+  .person-text-four{ 
     position: absolute;
     color: #2C2D30;
     font-family:"lato";
@@ -698,7 +701,7 @@ body{
     color: #2C2D30;
   }
   
-  #line-bottom{
+  .line-bottom{
      position: absolute;
     display: block;
     margin: auto;

@@ -25,9 +25,9 @@ class MessageMeComponent extends Component{
 
     render(){
         return(
-            <div className="animated slideInLeft" id="square">    
-                <div className="animated bounceInUp" id="leftSquare">
-                    <div id="row">
+            <div className="animated slideInLeft" className="square">    
+                <div className="animated bounceInUp" className="leftSquare">
+                    <div className="row">
                         <div className="col-lg-8">
                         <h1 className="title">Codepen</h1>
                         </div>
@@ -35,57 +35,57 @@ class MessageMeComponent extends Component{
             
                         <i className="bell fa fa-bell-o fa-lg" aria-hidden="true"></i>
                     </div>
-                    <div id="row">
-                        <div id="circle"></div>
-                        <h2 id="subtitle">mmang</h2>
+                    <div className="row">
+                        <div className="circle"></div>
+                        <h2 className="subtitle">mmang</h2>
                     </div>
-                    <div id="row">
-                        <h2 id="channels">CHANNELS<span id="light">(29)</span>
+                    <div className="row">
+                        <h2 className="channels">CHANNELS<span className="light">(29)</span>
                         <i className="add fa fa-plus-circle fa-inverse" aria-hidden="true"></i>
                         </h2>
                     </div>
-                    <div id="highlight-channel"></div>
-                    <div id="row">
-                        <h2 id="channel"># pens</h2>
+                    <div className="highlight-channel"></div>
+                    <div className="row">
+                        <h2 className="channel"># pens</h2>
                     </div>
-                    <div id="row">
-                        <h2 id="channel2"><span id="opacity"># </span> <span id="bold">posts</span></h2>
+                    <div className="row">
+                        <h2 className="channel2"><span className="opacity"># </span> <span className="bold">posts</span></h2>
                     </div>
-                    <div id="row">
-                        <h2 id="channel3"># shop</h2>
+                    <div className="row">
+                        <h2 className="channel3"># shop</h2>
                     </div>
-                    <div id="row">
-                        <span id="highlight">
-                            <h2 id="channel4"># codevember</h2></span>
+                    <div className="row">
+                        <span className="highlight">
+                            <h2 className="channel4"># codevember</h2></span>
                     </div>
-                    <div id="row">
-                        <h2 id="messages">DIRECT MESSAGES<span id="light">(12)</span> <i className="add-two fa fa-plus-circle fa-inverse"></i> </h2>
+                    <div className="row">
+                        <h2 className="messages">DIRECT MESSAGES<span className="light">(12)</span> <i className="add-two fa fa-plus-circle fa-inverse"></i> </h2>
                     </div>
-                    <div id="row">
-                        <div id="circle2"></div>
-                        <h2 id="subtitle2">Jsmith</h2>
+                    <div className="row">
+                        <div className="circle2"></div>
+                        <h2 className="subtitle2">Jsmith</h2>
                     </div>
-                    <div id="row">
-                        <div id="circle3"></div>
-                        <h2 id="subtitle3">mmang(you)</h2>
+                    <div className="row">
+                        <div className="circle3"></div>
+                        <h2 className="subtitle3">mmang(you)</h2>
                     </div>
                 </div>
-                <div className="animated bounceInDown" id="header">
-                    <h2 id="channel-title">
+                <div className="animated bounceInDown" className="header">
+                    <h2 className="channel-title">
                             #pens
                     </h2>
                     <div id = "icons">
                         <i className="star fa fa-star-o" aria-hidden="true"></i>
-                        <h3 id="line"> | </h3>
+                        <h3 className="line"> | </h3>
                         <i className="user fa fa-user-o" aria-hidden="true"></i>
-                        <h3 id="line2"> | </h3>
+                        <h3 className="line2"> | </h3>
                         <i className="pin fa fa-thumb-tack" aria-hidden="true"></i>
                     </div>
-                    <div id="rightIcons">
+                    <div className="rightIcons">
                         <i className="phone fa fa-phone fa-lg" aria-hidden="true"></i>
                         <i className="cog fa fa-cog fa-lg" aria-hidden="true"></i>
                         <i className=" details fa fa-list-alt fa-lg" aria-hidden="true"></i>
-                        <h3 id="line3"> | </h3>
+                        <h3 className="line3"> | </h3>
                         <i className="search-glass fa fa-search" aria-hidden="true"></i>
                         <input className="search" placeholder="Search" type="text" >
                         </input>
@@ -95,18 +95,18 @@ class MessageMeComponent extends Component{
                     </div>
                     <hr className="bottom-header-line" />
                 </div>
-                <div id="message-area">
+                <div className="message-area">
                    {
                      this.state.users.map((user)=>{
                        return <MessageComponent user = {user} / >
                      })
                    }
                 </div>
-                <div id="bottom">
+                <div className="bottom">
                     <input className="search-bottom" placeholder="Message #pens" type="text" >
                                 </input>
                     <i className="smile fa fa-smile-o" aria-hidden="true"></i>
-                    <h3 id="line-bottom"> | </h3>
+                    <h3 className="line-bottom"> | </h3>
                     <i className="plus fa fa-plus" aria-hidden="true"></i>
                 </div>
             </div>

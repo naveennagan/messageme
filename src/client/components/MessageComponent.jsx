@@ -8,8 +8,8 @@ class MessageComponent extends Component{
     render(){
         var user = this.props.user
         return(
-            user.id ? <div id={"message"+user.id}>
-        <div id="container">
+            user.id ? <div className="message">
+        <div className="container">
           <div className="row">
             <div className="col-xs-6 col-md-3">
     <a href="#" className="person-one thumbnail">
@@ -17,10 +17,8 @@ class MessageComponent extends Component{
     </a>
             </div>
           </div>
-        </div>
-        <div id="container"> 
-          <h4 id="person-name"> {user.name} <span id="time">9:02 AM</span> </h4>
-          <h5 id="person-text">
+          <h4 className="person-name"> {user.name} <span className="time">9:02 AM</span> </h4>
+          <h5 className="person-text">
              {user.message}
           </h5>
         </div>
