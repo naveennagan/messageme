@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import MessageComponent from './MessageComponent'
 
+import UserSelectionPopup from './UserSelectionPopup'
 class MessageMeComponent extends Component{
     constructor(props){
         super(props)
@@ -19,8 +20,15 @@ class MessageMeComponent extends Component{
                 message: 'Hi',
                 src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/827672/pexels-photo-119705%20(1).jpeg'
             },
-           ]
+           ],
+           currentUser:{}
         }
+        this.onUserSelect = this.onUserSelect.bind(this);
+    }
+
+
+    onUserSelect=(user)=>{
+       this.setState({currentUser:user});
     }
 
     render(){
@@ -95,13 +103,16 @@ class MessageMeComponent extends Component{
                      })
                    }
                 </div>
-                <div className="bottom">
+                {
+                 this.state.currentUser.id ? <div className="bottom">
                     <input className="search-bottom" placeholder="Message #pens" type="text" >
                                 </input>
                     <i className="smile fa fa-smile-o" aria-hidden="true"></i>
                     <h3 className="line-bottom"> | </h3>
                     <i className="plus fa fa-plus" aria-hidden="true"></i>
-                </div>
+                 </div>:null
+                }
+                <UserSelectionPopup onUserSelect={this.onUserSelect} />
             </div>
         )
     }
